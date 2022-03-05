@@ -174,7 +174,7 @@ def delete_staff(request, staff_id):
         messages.success(request, "Staff Deleted Successfully.")
         return redirect('manage_staff')
     except:
-        messages.error(request, "Failed to Delete Staff")
+        messages.error(request, "Failed to Delete Staff.")
         return redirect('manage_staff')
 
 
